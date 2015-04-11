@@ -1,0 +1,373 @@
+/*   
+Theme Name: Skokov-blog
+Theme URI: https://wordpress.org/themes/exam-theme
+Description: the WordPress team
+Author: Grigoriev
+Author URI: localhost
+.
+This theme, like WordPress.
+.
+*/
+
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+html {margin-top:0 !important;}
+body                            { padding:0; margin:0; font:14px Century Gothic;background:#F7F7F7; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Tahoma, sans-serif; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.wrap {
+	width:1633px;
+	margin:0 auto;
+	padding:15px;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.header {
+	margin:0 0 78px;
+	
+}
+
+.header .logo{
+	display: block;
+    margin: 0 0 0 120px;
+    overflow: hidden;
+    padding: 5px 0;
+	width: 116px;
+}
+
+.header .nav{
+	margin:0 120px 0 0;
+	overflow:hidden;
+	float:right;
+}
+
+.header .nav-menu{
+	padding:20px 0;
+	overflow:hidden;
+	float:right;
+}
+
+.header .nav-menu li{
+	float:left;
+	overflow:hidden;
+	margin:0 0 0 50px;
+}
+
+.header .nav-menu li a{
+	letter-spacing:1px;
+	display:block;
+	padding:20px 5px;
+	font:16px "Code";
+	text-transform:uppercase;
+}
+
+.header .nav-menu li a:hover{
+	background:#ffe900;
+}
+
+.header .page-title {
+	background:url("images/page-title.jpg");
+	height:150px;
+}
+
+.header .page-title h1 {
+	background: none repeat scroll 0 0 #414145;
+    color: #ffe900;
+    left: 120px;
+    padding: 6px 150px 6px 20px;
+    position: relative;
+    top: 50px;
+    width: 200px;
+	display:inline;
+	text-transform:uppercase;
+	font:35px Century Gothic;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.main {
+	width:1162px;
+	overflow:hidden;
+	float:left;
+}
+
+.main .post{
+	margin:0 30px 30px 0;
+	width:551px;
+	float:left;
+	overflow:hidden;
+}
+
+
+.attachment-post-thumbnail.wp-post-image {
+    height: 386px;
+    width: 551px;
+	vertical-align:bottom;
+}
+
+.main .post .post-content::before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #ffe900;
+    border-image: none;
+    border-style: solid;
+    border-width: 20px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 68px;
+    top: -38px;
+}
+
+
+.main .post .post-content {
+	background:#FFE900;
+	padding:26px 23px;
+	position:relative;
+}
+
+.main .post .post-content .entry-title{
+		margin:0 0 23px;
+}
+
+.main .post .post-content .entry-title a{
+	font-size:23px;
+	text-transform:uppercase;
+}
+
+.main .post .post-content p {
+	color:#5E5E5E;
+	margin:0 0 23px;
+	height:58px;
+}
+
+.main .post .post-content .like {
+	float:left;
+	overflow:hidden;
+	background:url("images/like.png") no-repeat center left;
+	padding:0 0 0 17px;
+}
+
+.main .post .post-content .post-info  {
+	text-align:right;
+}
+
+.main .post .post-content .post-info li{
+	display:inline;
+	font-size: 12px;
+}
+
+.pagination {
+	clear:both;
+	margin:0 30px 0 0;
+	text-align:center;
+	margin:0 0 40px;
+}
+
+.pagination .page-numbers{
+	font:bold 20px Century Gothic;
+	color:#414146;
+	text-transform:uppercase;
+	padding: 13px 19px;
+	overflow:hidden;
+}
+
+.pagination .page-numbers.current, .pagination .page-numbers:hover{
+	background:#FFE900;
+}
+
+.pagination .page-numbers.prev{
+	float:left;
+}
+
+.pagination .page-numbers.next{
+	float:right;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.sidebar {
+    float: right;
+    overflow: hidden;
+	width:471px;
+}
+
+.sidebar .widget_search {
+	padding:23px;
+	background:#414147;
+	margin:0 0 30px;
+}
+
+.sidebar .screen-reader-text {
+	display:none;
+}
+
+.sidebar .searchform div{
+	background:white;
+	border-radius:10%;
+	border-radius: 23px;
+	width: 366px;
+	padding:7px;
+	margin:0 auto;
+}
+
+.sidebar .widget_search #searchsubmit {
+	border:none;
+	background:url("images/search.png") no-repeat white ;
+	width:23px;
+	height:22px;
+}
+
+.sidebar .widget_search #s {
+	width: 285px;
+	border:none;
+	padding:0 0 0 9px;
+	font-size:14px;
+}
+
+
+.sidebar .widget_categories {
+	background:#414147;
+	padding:35px 35px 50px 35px ;
+	margin:0 0 30px;
+}
+
+.sidebar .widget_categories .widget-title {
+	text-transform:uppercase;
+	font:20px Century Gothic;
+	color:#FFE900;
+	margin:0 0 35px;
+}
+
+.sidebar .widget_categories ul{
+	overflow:hidden;
+	width:380px;
+}
+
+.sidebar .widget_categories .cat-item{
+	background:url("images/category_bg.jpg") no-repeat center left;
+	padding: 6px 0 6px 43px;
+	margin:0 15px 15px 0;
+	float:left;
+	width:132px;
+}
+
+.sidebar .widget_categories .cat-item a{
+	font:16px Century Gothic;
+	color:white;
+	text-transform:uppercase;
+}
+
+.sidebar .widget_archive {
+	background:#414147;
+	padding:35px 35px 50px 35px ;
+	margin:0 0 30px;
+}
+
+.sidebar .widget_archive .widget-title {
+	text-transform:uppercase;
+	font:20px Century Gothic;
+	color:#FFE900;
+	margin:0 0 35px;
+}
+
+.sidebar .widget_archive ul{
+	overflow:hidden;
+	width:380px;
+}
+
+.sidebar .widget_archive ul li{
+	background:url("images/category_bg.jpg") no-repeat center left;
+	padding: 6px 0 6px 43px;
+	margin:0 15px 15px 0;
+	float:left;
+	width:132px;
+}
+
+.sidebar .widget_archive ul li a, .sidebar .widget_archive ul li{
+	font:16px Century Gothic;
+	color:white;
+	text-transform:uppercase;
+}
+
+.sidebar .widget_tag_cloud {
+	background:#414147;
+	padding:35px 35px 50px 35px ;
+	margin:0 0 30px;
+}
+
+.sidebar .widget_tag_cloud .widget-title {
+	text-transform:uppercase;
+	font:20px Century Gothic;
+	color:#FFE900;
+	margin:0 0 35px;
+}
+
+.sidebar .widget_tag_cloud .tagcloud a {
+	text-transform:uppercase;
+	color:#414147;
+	font:16px Century Gothic !important;
+	background:#FFE900;
+	padding:3px 6px;
+	
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.footer {
+	clear:both;
+	height:200px;
+	background:#414145;
+}
